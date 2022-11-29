@@ -1,2 +1,2 @@
-# spring_batch_tutorial
-스프링 배치 튜토리얼
+# spring_client_tutorial
+스프링 외부 API 호출 튜토리얼
