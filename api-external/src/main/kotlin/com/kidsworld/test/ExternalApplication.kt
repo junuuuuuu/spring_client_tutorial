@@ -1,11 +1,11 @@
-package com.kidsworld.clientdemo
+package com.kidsworld.test
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ClientdemoApplication
+class ExternalApplication
 
 fun main(args: Array<String>) {
-	runApplication<ClientdemoApplication>(*args)
+	runApplication<ExternalApplication>(*args)
 }

@@ -1,10 +1,10 @@
-package com.kidsworld.clientdemo
+package com.kidsworld.test
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class ClientdemoApplicationTests {
+class TestApplicationTests {
 
 	@Test
 	fun contextLoads() {
