@@ -1,0 +1,22 @@
+# Feign using okhttp
+demo:
+  clients:
+    test:
+      endpoint: http://localhost:9090
+
+
+feign:
+  okhttp:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 10000
+        loggerLevel: full
+  httpclient:
+    max-connections: 1000
+
+---
+spring.config.activate.on-profile: local
+---
