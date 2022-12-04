@@ -1,9 +1,9 @@
 package com.kidsworld.demo.client.test.client
 
-import com.kidsworld.demo.client.common.response.ClientResponse
 import com.kidsworld.demo.client.test.config.TestClientConfiguration
 import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
 
 @FeignClient(
   name = "test",
@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping
   configuration = [TestClientConfiguration::class]
 )
 interface TestClient {
-  @GetMapping
-  fun requestDasSample(): String
+  @GetMapping("/test/{params}")
+  fun requestDasSample(@PathVariable params: String): String
 }
